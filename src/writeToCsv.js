@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 //Write to CSV file
 const writeToCsv = async (fileName, data) => {
    // output file in the userFiles folder
-   const filename = path.join(__dirname, `./userFiles/${fileName}`);
+   const filename = path.join(__dirname, `../userFiles/${fileName}`);
    let row;
    // If file doesn't exist, new file will be created and artist information with headers will be added
    if (!fs.existsSync(filename)) {

@@ -21,7 +21,7 @@ npm install
 ## Usage
 ### Backend
 
-Now the server has to be started. Enter the following line into the terminal.
+Now the server has to be started. While you are in the "src" directory enter the following line into the terminal.
 
 ```bash
 node app.js

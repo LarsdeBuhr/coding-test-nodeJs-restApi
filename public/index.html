@@ -4,18 +4,21 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <link rel="stylesheet" href="./css/index-styles.css">
+   <title>Main Page</title>
 </head>
 <body>
-   <h1>Search artists and save to CSV file</h1>
+   <h1>Search for artists and save the results in a CSV file</h1>
    <form action="" method="post">
-      <label for="filename">Filename:</label>
-      <input type="text" id="filename" name="filename" placeholder="filename" required><span>.csv</span>
-      <br><br>
-      <label for="artist">Artist:</label>
-      <input type="text" id="artist" name="artist" placeholder="artist" required>
-      <br><br>
-      <button type="submit">Send</button>
+      <div class="inputWrapper">
+            <!-- Input for filename -->
+            <span class="inputFileName"><input type="text" id="filename" name="filename" placeholder="Filename" required>.csv</span>
+            <!-- Unput fpr artist name -->
+            <input class="inputArtist" type="text" id="artist" name="artist" placeholder="Artist search" required>
+            <!-- Send Button -->
+            <button type="submit">Send</button>
+      </div>
    </form>
+   <script src="./js/index.js"></script>
 </body>
 </html>

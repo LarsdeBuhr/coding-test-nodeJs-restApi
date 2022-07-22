@@ -1,0 +1,103 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+   font-size: 30px;
+   text-align: center;
+   margin: 20px;
+}
+
+.inputWrapper{
+   display: grid;
+   grid-template-columns: 1;
+   grid-template-rows: 4;
+   justify-items: start;
+   justify-content: center;
+   row-gap: 10px;
+  
+   
+}
+
+.inputFileName{
+   grid-column-start: 1;
+   grid-column-end: 1;
+   grid-row-start: 1;
+   grid-row-end: 1;
+}
+
+.inputArtist{
+   grid-column-start: 1;
+   grid-column-end: 1;
+   grid-row-start: 2;
+   grid-row-end: 2;
+}
+
+.warnMsg{
+   grid-column-start: 1;
+   grid-column-end: 1;
+   grid-row-start: 4;
+   grid-row-end: 4;
+}
+
+input{
+   width: 20vw;
+   border-radius: 5px;
+   border: none;
+   box-shadow: 1px 1px 1px 1px #aaa;
+   padding-left: 10px;
+   margin-right: 2px;
+   border-width: none;
+}
+
+input:focus, button:focus{
+   outline: none;
+}
+
+label{
+   margin-right: 10px;
+}
+
+button{
+   display: block;
+   width: 100px;
+   grid-column-start: 1;
+   grid-column-end: 1;
+   grid-row-start: 3;
+   grid-row-end: 3;
+   width: 20vw;
+   justify-self: start;
+   border: none;
+   border-radius: 5px;
+   box-shadow: 1px 1px 1px 1px #aaa;
+   font-weight: 500;
+   background: #eee;
+   color: #666;
+} 
+
+button:hover{
+   background: #bbb;
+   color: #eee;
+}
+
+.green{
+   background: hsla(120, 100%, 80%, 0.20);
+}
+
+.red{
+   background: hsla(0, 100%, 80%, 0.20);
+}
+
+.redColor{
+   color: rgba(253, 0, 0, 0.697);
+}
+
+.hide{
+   display: none;
+}
+
+
