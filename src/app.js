@@ -23,11 +23,9 @@ app.listen(port, () => {
 
 app.use(express.urlencoded({ extended: true }));
 app.post("", (req, res) => {
-   
    //getting user input via post-method
    let filenameFromUserInput = encodeURIComponent(req.body.filename) + ".csv";
    let artistFromUserInput = encodeURIComponent(req.body.artist);
-
 
    const apiKey = "6ee9913bbcf31aa24cd6b422e2646f6a";
    fetch(
@@ -38,7 +36,9 @@ app.post("", (req, res) => {
          //Checking if the artist, the user is looking for, is in the dataset
          let artistInformation =
             dataFromJSON.results.artistmatches.artist.filter(
-               (artist) => encodeURIComponent(artist.name.toLowerCase()) === artistFromUserInput.toLowerCase()
+               (artist) =>
+                  encodeURIComponent(artist.name.toLowerCase()) ===
+                  artistFromUserInput.toLowerCase()
             );
 
          let data = null;
